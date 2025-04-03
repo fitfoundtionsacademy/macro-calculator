@@ -1,0 +1,62 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fit Foundations Macro Calculator</title>
+    <style>
+        body {
+            font-family: 'Oswald', sans-serif;
+            margin: 0;
+            padding: 10px;
+            background-color: #ffffff;
+            color: #000000;
+            text-align: center;
+        }
+        h1 {
+            color: #00D0FF;
+        }
+        input, select, button {
+            width: 90%;
+            padding: 12px;
+            margin: 10px auto;
+            border-radius: 8px;
+            border: 2px solid #00D0FF;
+            font-size: 16px;
+        }
+        button {
+            background-color: #00D0FF;
+            color: white;
+            font-weight: bold;
+            cursor: pointer;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+    <img src="https://yourwebsite.com/logo.png" alt="Fit Foundations Logo" style="max-width: 80%; height: auto;">
+    <h1>Fit Foundations Macro Calculator</h1>
+    <form id="macroForm" action="results.html" method="GET">
+        <input type="number" name="age" placeholder="Age" required>
+        <input type="number" name="heightFeet" placeholder="Height (Feet)" required>
+        <input type="number" name="heightInches" placeholder="Height (Inches)" required>
+        <input type="number" name="weight" placeholder="Weight (lbs)" required>
+        <select name="goal" required>
+            <option value="" disabled selected>Select Your Goal</option>
+            <option value="lose">Lose Weight</option>
+            <option value="maintain">Maintain Weight</option>
+            <option value="gain">Gain Weight</option>
+        </select>
+        <select name="activity" required>
+            <option value="" disabled selected>Activity Level</option>
+            <option value="sedentary">Sedentary</option>
+            <option value="light">Lightly Active</option>
+            <option value="moderate">Moderately Active</option>
+            <option value="active">Active</option>
+            <option value="veryActive">Very Active</option>
+        </select>
+        <button type="submit">Calculate Macros</button>
+    </form>
+</body>
+</html>
