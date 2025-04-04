@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fit Foundations Macro Calculator</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Oswald:400">
+    <style>
+        body { font-family: 'Oswald', sans-serif; color: #000; background-color: #FFF; text-align: center; }
+        input, button { padding: 12px; font-size: 18px; margin-top: 10px; }
+        .consent-box { margin-top: 20px; font-size: 14px; }
+        a { color: #00D0FF; }
+        img { max-width: 250px; margin-bottom: 20px; }
+    </style>
+</head>
+<body>
+    <img src="logo.png" alt="Fit Foundations Academy Logo">
+    <h2>Calculate Your Macros</h2>
+    <form action="results.html">
+        <input type="number" placeholder="Age" required><br>
+        <input type="number" placeholder="Height (feet)" required><br>
+        <input type="number" placeholder="Height (inches)" required><br>
+        <input type="number" placeholder="Weight (lbs)" required><br>
+        <select required>
+            <option value="">Select Goal</option>
+            <option value="lose">Lose Weight</option>
+            <option value="maintain">Maintain</option>
+            <option value="gain">Gain Muscle</option>
+        </select><br>
+        <div class="consent-box">
+            <input type="checkbox" id="consent" required>
+            <label for="consent">
+                I agree to receive emails, SMS texts, and phone calls from Fit Foundations Academy. Message frequency varies. Msg & data rates may apply. Reply STOP to unsubscribe. See our <a href="privacy.html">Privacy Policy</a> and <a href="terms.html">Terms of Service</a>.
+            </label>
+        </div>
+        <button type="submit">Get Your Macros</button>
+    </form>
+</body>
+</html>
