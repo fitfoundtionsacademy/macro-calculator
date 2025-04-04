@@ -18,19 +18,16 @@
       flex-direction: column;
       align-items: center;
     }
-
     .logo {
       max-width: 250px;
       width: 80%;
       margin: 15px auto;
     }
-
     form {
       max-width: 400px;
       width: 100%;
       margin: 10px auto;
     }
-
     input, select {
       width: 100%;
       padding: 10px;
@@ -40,13 +37,11 @@
       border: 1px solid #ccc;
       font-size: 16px;
     }
-
     label {
       display: block;
       text-align: left;
       margin-top: 10px;
     }
-
     button {
       background-color: #00D0FF;
       color: #FFFFFF;
@@ -58,13 +53,11 @@
       margin-top: 15px;
       border-radius: 5px;
     }
-
     .consent {
       font-size: 12px;
       text-align: left;
       margin-top: 5px;
     }
-
     a {
       color: #00D0FF;
     }
@@ -73,18 +66,14 @@
 
 <body>
   <img src="logo.png" alt="Fit Foundations Academy Logo" class="logo">
-  
   <form action="results.html" method="get">
     <label>Age:</label>
     <input type="number" name="age" required>
-
     <label>Height:</label>
     <input type="number" name="feet" placeholder="Feet" required>
     <input type="number" name="inches" placeholder="Inches" required>
-
     <label>Weight (lbs):</label>
     <input type="number" name="weight" required>
-
     <label>Activity Level:</label>
     <select name="activity">
       <option value="1.2">Sedentary (little or no exercise)</option>
@@ -93,18 +82,15 @@
       <option value="1.725">Very active (6-7 days/week)</option>
       <option value="1.9">Extra active (very intense daily)</option>
     </select>
-
     <label>Goal:</label>
     <select name="goal">
       <option value="-500">Lose Weight</option>
       <option value="0">Maintain Weight</option>
       <option value="500">Gain Weight</option>
     </select>
-
     <label class="consent">
       <input type="checkbox" required> By submitting, you consent to receive emails and SMS messages from Fit Foundations Academy. View our <a href="terms.html">Terms</a> and <a href="privacy.html">Privacy Policy</a>.
     </label>
-
     <button type="submit">Calculate Macros</button>
   </form>
 </body>
